@@ -1,11 +1,11 @@
-import {sequelize} from "../database/db.js";
+import { sequelize } from "../database/db.js";
 
 import User from "./User.js";
 import Course from "./Course.js";
 import Category from "./Category.js";
 import Enrollment from "./Enrollment.js";
 import Rating from "./Rating.js";
-import ActivityLog from "./Activity_Log.js";
+import ActivityLog from "./Activity_log.js";
 
 // Relationships
 // instructor create course
@@ -69,12 +69,4 @@ ActivityLog.belongsTo(User, {
   as: "user",
 });
 
-export {
-  sequelize,
-  User,
-  Course,
-  Category,
-  Enrollment,
-  Rating,
-  ActivityLog,
-};
+export { sequelize, User, Course, Category, Enrollment, Rating, ActivityLog };
